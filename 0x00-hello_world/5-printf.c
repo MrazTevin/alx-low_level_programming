@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char *ptr = "with proper grammar, but the outcome is a piece of art, \n";
+	char *ptr = "with proper grammar, but the outcome is a piece of art,\n";
 
 	printf("%s", ptr);
 
