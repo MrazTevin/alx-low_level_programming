@@ -1,34 +1,19 @@
 #include<stdio.h>
-
-#include <time.h>
-#include<stdio.h>
 /**
- * main - entry point
+ * main - entry block
  * Return: 0
- * added nothing
  */
-
 int main(void)
-{
-	int last_num;
-	int n;
+	{
 
-	srand(time(0));
+	int ch;
 
-	n = rand() - RAND_MAX / 2;
-	last_num = n % 10;
-	if (last_num > 5)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, last_num);
+	putchar(ch);
 	}
-	else if (last_num == 0)
-	{
-		printf("Last digit of %d is 0 and is 0\n", n);
-	}
-	else if (last_num < 6 && last_num != 0)
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_num);
-	}
+
+	putchar('\n');
 
 	return (0);
 }
