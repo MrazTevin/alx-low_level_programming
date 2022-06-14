@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include "main.h"
 /**
-* _putchar - writes the character c to stdout
-*  @c: The character to print
+*  main - entry point
 *  Return: (1) Success
 */
-int _putchar(char c)
+int main(void)
 {
+	write(&c, 1);
 
-	return (write(1, &c, 1));
+	return (1);
+
 
 }
