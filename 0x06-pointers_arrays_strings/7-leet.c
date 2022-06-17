@@ -16,6 +16,11 @@ while (*(s + counter) != '\0')
 {
 for (i = 0; i < 5; i++)
 {
+
+if (*(s + counter) == lower_case[i] || *(s + counter) == upper_case[i])
+{
+*(s + counter) = numbers[i];
+
 if (*(s + counter) == lower_case[i] || *(s + counter) == upper_case[i])
 {
 *(s + counter) = numbers[i];
