@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - function that copies a string
- * @dest: destination.
+ * @dest: destination
  * @src: source.
  * @n: amount of bytes from src.
  * Return: the pointer to dest.
@@ -18,3 +18,4 @@ for ( ; i < n; i++)
 dest[i] = '\0';
 
 return (dest);
+}
