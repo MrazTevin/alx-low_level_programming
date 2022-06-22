@@ -5,6 +5,7 @@
  * @s: starting address of memory
  * @n: number of bytes to be filled
  * @b: value to be filled
+ * Return: pointer to memory area
  */
 
 
