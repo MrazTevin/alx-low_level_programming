@@ -1,14 +1,14 @@
-#include<stdio.h>
 #include "main.h"
+
 /**
-*  main - entry point
-*  Return: (1) Success
-*/
+ * main - entry point of our program
+ * Return: 0
+ */
+
 int main(void)
 {
-	write(&c, 1);
-
-	return (1);
-
-
+	_putchar("\n");
+	return (0);
 }
+
+
