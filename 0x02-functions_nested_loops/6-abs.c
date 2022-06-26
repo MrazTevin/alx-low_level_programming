@@ -2,13 +2,12 @@
 
 /**
  * _abs - compute the absolute value of an integer
- * @int: data type
+ * @n: integer to be used
  * Return: Always 0
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n < 0)
 	{
