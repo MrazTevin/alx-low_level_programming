@@ -14,15 +14,19 @@ char *_strdup(char *str)
 
 	int len = 0;
 
-	while (str[len])
-		len++;
-	new_str = malloc(len + 1);
-	if (p == NULL)
-	return (NULL);
-	p = new_str;
-	while (*str)
-		*p++ = *new_str++;
-	*p = '\0'; /* byte is null */
-	return (new_str);
+	if (str == NULL)
+		return (NULL);
 
+	while (*(str + len))
+		len++;
+	new_str = malloc(sizeof(*str) * (len + 1));
+
+	if (new_str == NULL)
+		return (NULL);
+	p = new_str;
+
+	while (*str)
+		*p++ = *str++;
+	*p = '\0';
+	return (str);
 }
