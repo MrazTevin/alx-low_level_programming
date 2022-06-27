@@ -19,7 +19,8 @@ char *_strdup(char *str)
 	new_str = malloc(len + 1);
 	p = new_str
 	if (new_str == NULL)
-	       return (NULL);
+	return (NULL);
+
 	while (*str)
 		*p++ = *new_str++;
 		*p = '\0'; /* byte is null */
