@@ -9,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-	char *new_str, *duplicate;
+	char *duplicate, *new_str;
 	char *p;
 
 	int len = 0;
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 		return (NULL);
 	p = duplicate;
 
-	while (*str)
+	while (*new_str)
 		*duplicate++ = *new_str++;
 	*duplicate = '\0';
 	return (p);
