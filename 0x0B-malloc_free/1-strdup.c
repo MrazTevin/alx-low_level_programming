@@ -9,24 +9,24 @@
 
 char *_strdup(char *str)
 {
-	char *new_str;
+	char *new_str, *duplicate;
 	char *p;
 
 	int len = 0;
 
 	if (str == NULL)
 		return (NULL);
-
+	new_str = str;
 	while (*(str + len))
 		len++;
-	new_str = malloc(sizeof(*str) * (len + 1));
+	duplicate = malloc(sizeof(*str) * (len + 1));
 
-	if (new_str == NULL)
+	if (duplicate == NULL)
 		return (NULL);
-	p = new_str;
+	p = duplicate;
 
 	while (*str)
-		*p++ = *str++;
-	*p = '\0';
-	return (str);
+		*duplicate++ = *new_str++;
+	*duplicate = '\0';
+	return (p);
 }
