@@ -23,6 +23,6 @@ char *_strdup(char *str)
 	while (*str)
 		*p++ = *new_str++;
 		*p = '\0'; /* byte is null */
-	return (new_str);	
+	return (new_str);
 
 }
