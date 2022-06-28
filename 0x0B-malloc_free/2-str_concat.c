@@ -35,4 +35,4 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i]; i++)
 		full_string[j++] = s2[i];
 
-	return (full_str);
+	return (full_string);
