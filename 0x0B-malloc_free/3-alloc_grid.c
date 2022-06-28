@@ -10,7 +10,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **2DArray;
+	int *2DArray;
 	int i, j;
 
 	if (width <=0 || height <=0)
