@@ -1,8 +1,4 @@
 #include<stdio.h>
-/**
-* main - entry point
-* Return: (Success) Always 0
-*/
 
 int main(void)
 {
