@@ -1,15 +1,26 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
+ * print_line - prints a straight line using '_'
+ * @n: the number of '_' to be printed
+ * Return: empty
+ */
+
+void print_line(int n)
 {
-print_line(0);
-print_line(2);
-print_line(10);
-print_line(-4);
-return (0);
+	int len;
+
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (len = 0; len < n; len++)
+		{
+			_putchar(95);
+		}
+
+		_putchar('\n');
+	}
 }
