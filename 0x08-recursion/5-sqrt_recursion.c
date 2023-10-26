@@ -1,22 +1,36 @@
 #include "main.h"
 
 /**
-* _pow_recursion - Returns the value of x raised to the power of y
-* @x: The base number
-* @y: The exponent
+* find_sqrt - Helper function to find the natural square root using recursion
+* @n: The number to find the square root of
+* @guess: The current guess for the square root
 *
-* Return: Result of x^y, or -1 if y is lower than 0
+* Return: The natural square root of n, or -1 if no natural square root exists
 */
-int _pow_recursion(int x, int y)
+int find_sqrt(int n, int guess)
 {
-if (y < 0)
+if (guess * guess == n)
 {
-return (-1); /* Return -1 to indicate an error if y is lower than 0 */
+/* base case: the square root of guess equals n */
+return (guess);
 }
-if (y == 0)
+if (guess * guess > n)
 {
-return (1); /* x^0 is always 1 */
+/* base case: no natural square root if guess exceeds n */
+return (-1);
 }
-return (x * _pow_recursion(x, y - 1)); /* Recursive call to calculate x^y */
+return (find_sqrt(n, guess + 1)); /* Recursive call: try the next guess */
+}
+
+/**
+* _sqrt_recursion - Returns the natural square root of a number
+* @n: The input number
+*
+* Return: The natural square root of n,
+* or -1 if n doesn't have a natural square root
+*/
+int _sqrt_recursion(int n)
+{
+return (find_sqrt(n, 1)); /* Start with a guess of 1 */
 }
 
